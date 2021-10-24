@@ -5,7 +5,6 @@
     Ogni array avrà una squadra di casa e una squadra ospite, punti fatti dalla squadra di casa e punti fatti dalla squadra ospite.
     Stampiamo a schermo tutte le partite con questo schema.
 -->
-
 <?php
     $squadre = [
         [
@@ -27,7 +26,10 @@
     foreach($squadre as $key => $squad){
         // var_dump($squad)
     ?>
-    <h1><?php echo $squad["squadHome"];?> </h1>
+    <h3><?php echo $squad["squadHome"];?> </h3>
+    <span><?php echo $squad["ptHome"];?></span>
+    <h3><?php echo $squad["squadOut"];?> </h3>
+    <span><?php echo $squad["ptOut"];?></span>
 
 <?php } ?>
 
@@ -94,6 +96,7 @@ foreach($posts as $chiave => $articles) {
             // var_dump($element);
         ?>
         <h3> <?php echo $element['author']; ?> </h3>
+        <p> <?php echo $element['text']; ?> </p>
     <?php }?>
 <?php } ?>
 
